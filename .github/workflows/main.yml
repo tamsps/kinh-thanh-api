@@ -22,5 +22,5 @@ jobs:
         working-directory: KinhThanhCongGiao/KinhThanhCongGiao.Api
       
       - name: Build app 
-        run: dotnet build -c Release --no-restore
-        working-directory: KinhThanhCongGiao
+        run: dotnet build -c Release
+        working-directory: KinhThanhCongGiao/KinhThanhCongGiao.Api
