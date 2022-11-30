@@ -23,6 +23,7 @@ jobs:
       
       - name: Build app 
         run: dotnet build -c Release --no-restore
+        working-directory: KinhThanhCongGiao
       
       - name: Test
         run: dotnet test --no-restore --verbosity normal
