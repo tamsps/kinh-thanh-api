@@ -1,4 +1,4 @@
-namespace KinhThanhCongGiaoApi
+namespace KinhThanhCongGiao.Api
 {
     public class WeatherForecast
     {
