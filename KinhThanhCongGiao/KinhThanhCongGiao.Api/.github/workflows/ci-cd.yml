@@ -19,6 +19,10 @@ jobs:
         
       - name: Restore Dependencies
         run: dotnet restore
+        working-directory: KinhThanhCongGiao/KinhThanhCongGiao.Api
       
       - name: Build app 
-        run: dotnet build  -c Release --no-restore
+        run: dotnet build --configuration -c Release --no-restore
+      
+      - name: Test
+        run: dotnet test --no-restore --verbosity normal
