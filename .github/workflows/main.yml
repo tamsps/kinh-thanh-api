@@ -24,3 +24,7 @@ jobs:
       - name: Build app 
         run: dotnet build -c Release
         working-directory: KinhThanhCongGiao/KinhThanhCongGiao.Api
+        
+      - name: Test
+        run: dotnet test --no-restore --verbosity normal
+        working-directory: KinhThanhCongGiao/KinhThanhCongGiao.Api
