@@ -19,7 +19,7 @@ jobs:
         
       - name: Restore Dependencies
         run: dotnet restore
-        working-directory: ../../../KinhThanhCongGiao/KinhThanhCongGiao.Api
+        working-directory: ../../../KinhThanhCongGiao/KinhThanhCongGiao.Api/KinhThanhCongGiao.Api.csproj
       
       - name: Build app 
         run: dotnet build --configuration -c Release --no-restore
