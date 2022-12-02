@@ -29,5 +29,19 @@ namespace KinhThanhCongGiao.Api.Controllers
             })
             .ToArray();
         }
+
+        [HttpPost(Name = "GetWeatherForecast")]
+        public List<string> Post()
+        {
+
+            var list2 = new List<string>()
+        {
+            "carrot",
+            "fox",
+            "explorer"
+        };
+            return list2;
+
+        }
     }
 }
