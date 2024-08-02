@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="13.0.1" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
+    <PackageReference Include="FluentValidation" Version="11.9.2" />
+    <PackageReference Include="MediatR" Version="12.3.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Commands\CreateKT\" />
+    <Folder Include="Commands\DeleteKTById\" />
+    <Folder Include="Commands\UpdateKT\" />
+    <Folder Include="DTOs\" />
+    <Folder Include="Queries\GetAllKT\" />
+    <Folder Include="Queries\GetKTById\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="KinhThanhCongGiao.Model">
+      <HintPath>..\..\..\kinh-thanh-model\KinhThanhCongGiao.Model\KinhThanhCongGiao.Model\bin\Debug\net8.0\KinhThanhCongGiao.Model.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
